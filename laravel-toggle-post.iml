@@ -126,6 +126,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/pheature/toggle-crud-psr11-factories" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pheature/laravel-toggle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pheature/php-sdk" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

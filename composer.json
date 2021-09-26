@@ -11,7 +11,8 @@
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "pheature/laravel-toggle": "^0.1.2"
+        "pheature/laravel-toggle": "^0.1.2",
+        "pheature/php-sdk": "^0.1.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

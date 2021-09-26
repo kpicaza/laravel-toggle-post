@@ -39,10 +39,49 @@ return [
         ],
     ],
     'toggles' => [
-        'feature_1' => [
-            'id' => 'feature_1',
+        'release_toggle_example_1' => [
+            'id' => 'release_toggle_example_1',
             'enabled' => false,
             'strategies' => [],
-        ]
+        ],
+        'ops_toggle_example_1' => [
+            'id' => 'ops_toggle_example_1',
+            'enabled' => true,
+            'strategies' => [],
+        ],
+        'experiment_toggle_example_1' => [
+            'id' => 'experiment_toggle_example_1',
+            'enabled' => true,
+            'strategies' => [
+                [
+                    'strategy_id' => 'rollout_by_location',
+                    'strategy_type' => 'enable_by_matching_segment',
+                    'segments' => [
+                        [
+                            'segment_id' => 'requests_from_barcelona',
+                            'segment_type' => 'strict_matching_segment',
+                            'criteria' => ['location' => 'barcelona'],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        'permission_toggle_example_1' => [
+            'id' => 'permission_toggle_example_1',
+            'enabled' => true,
+            'strategies' => [
+                [
+                    'strategy_id' => 'rollout_by_role',
+                    'strategy_type' => 'enable_by_matching_segment',
+                    'segments' => [
+                        [
+                            'segment_id' => 'requests_from_paid_users',
+                            'segment_type' => 'strict_matching_segment',
+                            'criteria' => ['accountType' => 'paid'],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ]
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "13e0f70d62b58b7293853e12505b02da",
+    "content-hash": "0d2e74d7a3a6301e3cb1ab92f46e234f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2218,6 +2218,78 @@
                 }
             ],
             "time": "2021-09-25T16:14:28+00:00"
+        },
+        {
+            "name": "pheature/php-sdk",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pheature-flags/php-sdk.git",
+                "reference": "8382c3e4bbed91a17d7833fb18f43a2ceb7f1d0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pheature-flags/php-sdk/zipball/8382c3e4bbed91a17d7833fb18f43a2ceb7f1d0d",
+                "reference": "8382c3e4bbed91a17d7833fb18f43a2ceb7f1d0d",
+                "shasum": ""
+            },
+            "require": {
+                "pheature/toggle-core": "^0.1",
+                "php": "^7.4|^8.0",
+                "psr/container": "^1.0.0|^2.0.0"
+            },
+            "require-dev": {
+                "icanhazstring/composer-unused": "^0.7.5",
+                "infection/infection": "^0.23.0",
+                "phpro/grumphp": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.0 || ^9.0",
+                "roave/infection-static-analysis-plugin": "^1.8",
+                "squizlabs/php_codesniffer": "^3.4",
+                "symfony/var-dumper": "^4.2 || ^5.0",
+                "vimeo/psalm": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Pheature\\Sdk\\Container\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pheature\\Sdk\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "kpicaza"
+                },
+                {
+                    "name": "pcs289"
+                },
+                {
+                    "name": "xserrat"
+                }
+            ],
+            "description": "Feature Flags As A Service PHP SDK.",
+            "keywords": [
+                "feature-flags",
+                "feature-toggle"
+            ],
+            "support": {
+                "source": "https://github.com/pheature-flags/php-sdk/tree/v0.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/pheature-flags",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-09-25T16:12:38+00:00"
         },
         {
             "name": "pheature/toggle-core",
